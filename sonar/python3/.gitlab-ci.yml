@@ -1,4 +1,3 @@
-
 sonar:
   image: tiagociprianoluizalabs/deployment:python3.6.4.0
   stage: build
