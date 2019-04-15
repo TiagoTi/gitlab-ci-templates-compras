@@ -1,9 +1,6 @@
 after_script:
-  image: tiagociprianoluizalabs/deployment:python3.6.4.0
-  stage: build
-  script:
-    - make sonar
-    - make sonar-validation
+  - make sonar
+  - make sonar-validation
 
 
 before_script:
