@@ -1,0 +1,9 @@
+
+build:sonar:
+  stage: build
+  dependencies:
+    - test
+  script:
+    - make sonar
+    - make sonar-validation
+
