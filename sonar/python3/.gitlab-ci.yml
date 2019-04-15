@@ -1,7 +1,15 @@
-after_script:
-  - make sonar
-  - make sonar-validation
-
-
-before_script:
-  - make install
+sonar:
+  image: tiagociprianoluizalabs/deployment:python3.6.4.0
+  stage: test
+  script: echo "aqui vão os sonar"
+  dependencies:
+    - testing
+# after_script:
+#   - make sonar
+#   - make sonar-validation
+#
+#
+# before_script:
+#   - make install
+#
+#
